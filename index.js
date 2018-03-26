@@ -37,6 +37,11 @@ function viewCart() {
       for (var item in cart[i]){
         itemList.push(item + " at $" + cart[i][item]);
       }
+      for (i = 0; i < cart.length; ++i) {
+        if (i == cart.length - 1)
+            itemList += " and " + item[i];
+        else
+            itemList += ", " + item[i];
     }
     console.log("In your cart, you have " + itemList.join(" , and ") + ".")
 }}
