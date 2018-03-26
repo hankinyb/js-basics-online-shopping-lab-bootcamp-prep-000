@@ -32,6 +32,7 @@ function viewCart() {
     console.log("In your cart, you have " + itemList.join(" and ") + ".")
 }
   else { 
+    var itemList = [];
     for (let i = 0; i < cart.length; i++) {
       for (var item in cart[i]){
         itemList.push(item + " at $" + cart[i][item]);
