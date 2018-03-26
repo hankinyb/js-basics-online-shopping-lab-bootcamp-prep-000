@@ -22,7 +22,7 @@ function viewCart() {
   if (cart.length === 0) {
     console.log("Your shopping cart is empty.");
   }
-  else if (cart.length === 2) {
+  else (cart.length === 2) {
     var itemList = [];
     for (let i = 0; i < cart.length; i++) {
       for (var item in cart[i]){
@@ -31,15 +31,7 @@ function viewCart() {
     }
     console.log("In your cart, you have " + itemList.join(" and ") + ".")
 }
-  else { 
-         }
-      for (i = 0; i < cart.length; ++i) {
-        if (i == cart.length - 1)
-            itemList += " and " + item[i];
-        else
-            itemList += ", " + item[i];
-    }
-    console.log("In your cart, you have " + (itemList.item(2, itemList.length)) + ".")
+ 
 }
 
 function total() {
