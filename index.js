@@ -29,7 +29,7 @@ function viewCart() {
         itemList.push(item + " at $" + cart[i][item]);
       }
     }
-    console.log("In your cart, you have " + itemList.join(" and ") + ".")
+    console.log("In your cart, you have " + a.join(', ').replace(/,(?!.*,)/gmi, ' and') + ".")
 }
  
 }
