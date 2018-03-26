@@ -22,16 +22,17 @@ function viewCart() {
   if (cart.length === 0) {
     console.log("Your shopping cart is empty.");
   }
-  else  {
+  else if (cart.length === 2) {
     var itemList = [];
     for (let i = 0; i < cart.length; i++) {
       for (var item in cart[i]){
         itemList.push(item + " at $" + cart[i][item]);
       }
     }
-    console.log("In your cart, you have " + [itemList.slice(0, -1).join(', '), itemList.slice(-1)[0]].join(itemList.length < 2 ? '' : ', and ') + ".")
+    console.log("In your cart, you have " + [itemList.slice(0, -1).join(', '), itemList.slice(-1)[0]].join(itemList.length < 2 ? '' : ' and ') + ".")
 }
- 
+  else {
+    console.log("In your cart, you have " + [itemList.slice(0, -1).join(', '), itemList.slice(-1)[0]].join(itemList.length < 3 ? '' : ', and ') + ".")
 }
 
 function total() {
