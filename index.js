@@ -32,6 +32,12 @@ function viewCart() {
     console.log("In your cart, you have " + [itemList.slice(0, -1).join(', '), itemList.slice(-1)[0]].join(itemList.length < 2 ? '' : ' and ') + ".")
 }
   else {
+    var itemList = [];
+    for (let i = 0; i < cart.length; i++) {
+      for (var item in cart[i]){
+        itemList.push(item + " at $" + cart[i][item]);
+      }
+    }
     console.log("In your cart, you have " + [itemList.slice(0, -1).join(', '), itemList.slice(-1)[0]].join(itemList.length < 3 ? '' : ', and ') + ".")
 }}
 
