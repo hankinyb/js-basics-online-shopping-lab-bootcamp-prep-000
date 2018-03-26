@@ -17,10 +17,7 @@ function addToCart(item) {
   console.log(item + " has been added to your cart.");
   return cart;
   
-  function total() {
-  var sum = itemPrice.reduce(0);
-  console.log (sum)}
-}
+  }
 
 function viewCart() {
   if (cart.length === 0) {
@@ -45,7 +42,9 @@ function viewCart() {
     console.log("In your cart, you have " + [itemList.slice(0, -1).join(', '), itemList.slice(-1)[0]].join(itemList.length < 3 ? '' : ', and ') + ".")
 }}
 
-
+function total() {
+  var sum = itemPrice.reduce(0);
+  console.log (sum)}
 
 
 function removeFromCart(item) {
