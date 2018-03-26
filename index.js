@@ -43,10 +43,10 @@ function viewCart() {
 }}
 
 function total() {
-  var itemName = {}; 
-  var itemPrice = Math.floor((Math.random() * 10) + 1);
-  itemName = { [item] : itemPrice };
-  for (var i = 0; i < itemName.length; i++) {
+  
+  var itemPrice = [Math.floor((Math.random() * 10) + 1)];
+ 
+  for (var i = 0; i < itemPrice.length; i++) {
   sum += itemPrice[i]
   
   return sum;
