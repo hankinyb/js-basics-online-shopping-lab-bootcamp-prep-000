@@ -16,6 +16,10 @@ function addToCart(item) {
   cart.push(itemName);
   console.log(item + " has been added to your cart.");
   return cart;
+  
+  function total() {
+  var sum = itemPrice.reduce(0);
+  console.log (sum)}
 }
 
 function viewCart() {
