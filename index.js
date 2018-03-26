@@ -44,9 +44,7 @@ function viewCart() {
 
 function total() {
   
-  var itemPrice = [Math.floor((Math.random() * 10) + 1)];
-  var sum = itemPrice.reduce(0)
-  console.log (sum);
+  
 }
 
 
