@@ -43,7 +43,7 @@ function viewCart() {
         else
             itemList += ", " + item[i];
     }
-    console.log("In your cart, you have " + itemList.join(" , and ") + ".")
+    console.log("In your cart, you have " + itemList.item(2, itemList.length) + ".")
 }}
 
 function total() {
