@@ -45,10 +45,8 @@ function viewCart() {
     console.log("In your cart, you have " + [itemList.slice(0, -1).join(', '), itemList.slice(-1)[0]].join(itemList.length < 3 ? '' : ', and ') + ".")
 }}
 
-function total() {
-  var sum = itemPrice.reduce(0);
-  console.log (sum)
-}
+
+
 
 function removeFromCart(item) {
   // write your code here
