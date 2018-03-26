@@ -33,7 +33,7 @@ function viewCart() {
 }
   else {
     console.log("In your cart, you have " + [itemList.slice(0, -1).join(', '), itemList.slice(-1)[0]].join(itemList.length < 3 ? '' : ', and ') + ".")
-}
+}}
 
 function total() {
   // write your code here
