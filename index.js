@@ -33,7 +33,7 @@ function viewCart() {
 }
   else { 
     for (let i = 0; i < cart.length; i++) {
-      for (item in cart[i]){
+      for (var item in cart[i]){
         itemList.push(item + " at $" + cart[i][item]);
       }
     }
