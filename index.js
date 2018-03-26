@@ -32,11 +32,7 @@ function viewCart() {
     console.log("In your cart, you have " + itemList.join(" and ") + ".")
 }
   else { 
-    var itemList = [];
-    for (let i = 0; i < cart.length; i++) {
-      for (var item in cart[i]){
-        itemList.push(item + " at $" + cart[i][item]);
-      }
+         }
       for (i = 0; i < cart.length; ++i) {
         if (i == cart.length - 1)
             itemList += " and " + item[i];
@@ -44,7 +40,7 @@ function viewCart() {
             itemList += ", " + item[i];
     }
     console.log("In your cart, you have " + (itemList.item(2, itemList.length)) + ".")
-}}
+}
 
 function total() {
   // write your code here
