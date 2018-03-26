@@ -47,9 +47,8 @@ function total() {
   var itemPrice = [Math.floor((Math.random() * 10) + 1)];
  
   for (var i = 0; i < itemPrice.length; i++) {
-  sum += itemPrice[i]
+  console.log (sum += itemPrice[i]);
   
-  return sum;
 }}
 
 
