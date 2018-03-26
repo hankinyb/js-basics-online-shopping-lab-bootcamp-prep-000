@@ -42,7 +42,7 @@ function viewCart() {
 }}
 
 function total() {
-  var sum = [].reduce(add, 0)
+  var sum = [].reduce(add, 0);
 }
 
 function removeFromCart(item) {
